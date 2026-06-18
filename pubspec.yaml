@@ -1,0 +1,32 @@
+name: apple
+description: "A new Flutter project for Music/Video Player."
+publish_to: 'none' # 避免意外發布到 pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # 支援現代 Flutter SDK 版本
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # [外掛套件]：加入影片播放器套件
+  video_player: ^2.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# 核心設定區
+flutter:
+  uses-material-design: true
+
+  # [資源宣告]：這段縮排非常重要！前面空 2 個空格，下方路徑空 4 個空格
+  assets:
+    - assets/videos/1.mp4
+    - assets/videos/2.mp4
+    - assets/videos/3.mp4
+    - assets/videos/4.mp4
+    - assets/videos/5.mp4
